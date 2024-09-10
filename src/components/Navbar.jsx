@@ -20,7 +20,7 @@ const Navbar = () => {
 
                         {/* Hamburger Icon for mobile view */}
                         <div className="md:hidden">
-                        <a href="" target='_blank'>
+                        <a href="https://github.com/vedansh302/SaveIT-PasswordManager.git" target='_blank'>
                                 <img className='invert w-10 h-10 cursor-pointer hover:scale-110 transition-all duration-200 hover:text-violet-500' src="/icons/github.svg" alt="" />
                             </a>
                         </div>
@@ -29,7 +29,7 @@ const Navbar = () => {
                         <ul className={`md:flex gap-5 text-lg text-violet-100 items-center ${'hidden'} md:block`}>
                             <ButtonAnimatedGradient text="Home" />
                             <ButtonAnimatedGradient text="Sign In" />
-                            <a href="" target='_blank'>
+                            <a href="https://github.com/vedansh302/SaveIT-PasswordManager.git" target='_blank'>
                                 <img className='invert w-10 h-10 cursor-pointer hover:scale-110 transition-all duration-200 hover:text-violet-500' src="/icons/github.svg" alt="" />
                             </a>
                         </ul>
