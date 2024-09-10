@@ -77,7 +77,6 @@ const Manager = () => {
     const deletePassword = (id) => {
         let c = confirm("Are you sure you want to delete this?")
         if (c) {
-            console.log("deleting password with id: ", id);
             setPasswordArray(passwordArray.filter(item => item.id !== id))
             localStorage.setItem("passwords", JSON.stringify(passwordArray.filter(item => item.id !== id)))
             toast.success('Deleted Successfully', {
@@ -94,7 +93,6 @@ const Manager = () => {
     }
 
     const editPassword = (id) => {
-        console.log("editing password with id: ", id);
         setForm(passwordArray.filter(item => item.id === id)[0])
         setPasswordArray(passwordArray.filter(item => item.id !== id))
     }
@@ -174,8 +172,8 @@ const Manager = () => {
                     <h2 className='font-bold text-2xl py-4 text-center'>Your Credentials</h2>
                     {passwordArray.length === 0 && <div className='text-center'>No Information to show</div>}
                     {passwordArray.length != 0 &&
-                        <div className="overflow-x-auto"> {/* Add this div */}
-                            <table className="table-auto w-full min-w-[640px] overflow-hidden rounded-md mb-5"> {/* Adjust the table */}
+                        <div className="overflow-x-auto"> 
+                            <table className="table-auto w-full min-w-[640px] overflow-hidden rounded-md mb-5"> 
                                 <thead className='text-violet-100 bg-slate-900 '>
                                     <tr>
                                         <th className='py-2'>Site</th>
